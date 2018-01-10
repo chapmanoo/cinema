@@ -22,5 +22,9 @@ public class Service {
 	public Movie getMovieAtIndex(int movieToGet) {
 		return movieMap.get(movieToGet);
 	}
+	
+	public Map<Integer, Movie> getMap() {
+		return movieMap;
+	}
 
 }
