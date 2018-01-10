@@ -27,4 +27,18 @@ public class Service {
 		return movieMap;
 	}
 
+	public int getGenreCount(String genreToFind) {
+		int toReturn = 0;
+		
+		for (int i = 0; i < movieMap.size(); i++)
+		{
+			if(movieMap.get(i).getGenre().equals(genreToFind))
+			{
+				toReturn++;
+			}
+		}
+		
+		return toReturn;
+	}
+
 }
